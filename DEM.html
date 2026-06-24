@@ -37,7 +37,7 @@
                                         <h2>Digital Elevation Models</h2>
 										<p>In this assignment, we needed to use an old map of the Netherlands, along a river or canal, and make an elevation map using QGIS of the modern day state of the chosen area. Personally, I chose the area around Schiedam, west to Rotterdam. Rotterdam is an area which has undergone many changes in its waterways, and it was an interesting exercise also to see the cartographic perception and scale of hand-drawn maps.</p>			
                                        
-                                       <h2>Final result:</h2><br>
+                                       <h2>Final result:</h2>
                                         <img src="/images/dem.png" alt="DEM Map">
                                          <style>
 
@@ -48,11 +48,11 @@
                                                 width: 50%;
                                             }
                                        </style>
-                                       
+                                       <br>
 										<h3 id="content">Information about the old map</h3>
                                         <p>Drawn in 1749, by famous Dutch cartographer M. Bolstra, this is part of a series of old maps under Utrecht University's care. Below, see the map and the area today.</p>
                                         
-                                        <img src="/images/dem_old.tif" alt="DEM Map">
+                                        <img src="/images/dem_old.png" alt="DEM Map">
                                          <style>
 
                                             img {
@@ -62,6 +62,7 @@
                                                 width: 50%;
                                             }
                                        </style>
+                                       <br>
 
 
                                         <img src="/images/demgm.png" alt="DEM Map">
@@ -73,17 +74,16 @@
                                                 margin-right: auto;
                                                 width: 50%;
                                             }
-                                       </style>
+                                       </style><br>
 												<!-- Text stuff
 												 	<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
 														This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
 														This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>.
 														Finally, this is a <a href="#">link</a>.</p> -->
-													<h3>Why isochrone?</h3>
-													<p>Using an isochrone map for this assignment was most appropiate as the coverage of the isocrone bands visually demonstrates distance and accessibility to nurseries. With QuickMapServices, I managed to get a map of the district, and with that I identified nurseries and kindergartens in the area to the west of my family home. I took this decision as from my own experience I always identified this area to be packed with these amenities. Then, with ORS I made an isochrone spectrum across every data point, with the ranges 2, 4, and 6 minutes walking distance.</p>
-													<h3>Main patterns</h3>
-                                                    <p>There is only a single spot in the map which is not within a 6-min walking distance range of the nurseries. This space is barely 2 blocks, so it is possible to say that within a couple more minutes, it can be easily reached. The shapes of the isochrones are mostly circular or oval, but along the edges of the selected area some isochrones are slightly more warped. This was expected, as it limits with either main avenues or the highway.</p>
-													
+													<h3>About the size and choices</h3>
+													<p>The total area I worked with in this assignment was around 290 squared kilometres making it a medium-sized region of interest. As for display choices, the Amersfoort/RD New coordinate system for visibility and the colors were picked for intuitivity, with greens representing high elevation and blues representing low elevation, almost mimicking ocean and land.</p><br>
+													<h3>Challenges in this assignment</h3>
+													<p>This assignment was one of the most challenging ones, as I felt very lost with little guidance. However, I did manage to produce a result I am somewhat satisfied with. My main struggles this assignment were: creating layers for all 3 DTM, DSM, and RGB, map orientation, as the mapped area changed dramatically, and lastly, rendering hillshade in QGIS was not running correctly for me. Most of these issues were trivial so I still was able to present a product.</p>
 
 																		
 													
