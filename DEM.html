@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Digital Elevation Models</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo">GIS Portfolio</a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-mail"><span class="label">Contact</span></a></li>
+										<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Assignment 3: DEM</h1>
+									</header>
+
+									<!-- Content -->
+                                        <h2>Digital Elevation Models</h2>
+                                        <p>Certain adjacent residential neighborhoods in the district Santiago de Surco in Lima, Peru are very dense in nurseries and kindergartens. Therefore, with this assignment I tried to answer: What is approximately the maximum amount of walking time someone living in the following neighborhoods: La Alborada, Tambo de Monterrico, Chacarilla, Las Gardenias, Pancho Fierro, and Santa Teresa, would need to get to a nursery?</p>
+													
+                                       <img src="iso.png" alt="Isochrone Map">
+                                         <style>
+
+                                            img {
+                                                display: block;
+                                                margin-left: auto;
+                                                margin-right: auto;
+                                                width: 50%;
+                                            }
+                                       </style>
+                                       
+										<h2 id="content">Map aim</h2>
+										<p>Observing and analyzing spatial dynamics in these middle-high class neighborhoods. By simply viewing these patterns, it is also inferrable that it is an attractive space for new families with kids. But from experience living in that area, I can also provide some interesting context. This area used to be grape fields and most of the houses built there are relatively new, around 30 years at most. And it was turned into a fully residential area, attracting many people which are the parents of my generation. Additionally, while growing up in that area, many of the neighbors moved as their children become older. Parks also seem to be inhabited by kids that never grow up, meaning that many starting families choose these neighborhoods for around 10 years before moving somewhere closer to schools, businesses, or other. As this is a recent phenomenon, it is quite an interesting cycle to theorize about.
+                                        </p>
+												<!-- Text stuff
+												 	<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+														This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+														This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>.
+														Finally, this is a <a href="#">link</a>.</p> -->
+													<h3>Why isochrone?</h3>
+													<p>Using an isochrone map for this assignment was most appropiate as the coverage of the isocrone bands visually demonstrates distance and accessibility to nurseries. With QuickMapServices, I managed to get a map of the district, and with that I identified nurseries and kindergartens in the area to the west of my family home. I took this decision as from my own experience I always identified this area to be packed with these amenities. Then, with ORS I made an isochrone spectrum across every data point, with the ranges 2, 4, and 6 minutes walking distance.</p>
+													<h3>Main patterns</h3>
+                                                    <p>There is only a single spot in the map which is not within a 6-min walking distance range of the nurseries. This space is barely 2 blocks, so it is possible to say that within a couple more minutes, it can be easily reached. The shapes of the isochrones are mostly circular or oval, but along the edges of the selected area some isochrones are slightly more warped. This was expected, as it limits with either main avenues or the highway.</p>
+													
+
+																		
+													
+
+					<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="contact.html">Contact</a></li>
+										<li><a href="test_choro.html">Choropleth</a></li>
+										<li><a href="isochrone.html">Isochrone</a></li>
+										<li><a href="DEM.html">DEM</a></li>
+										<li><a href="NDVI.html">NDVI</a></li>
+										<li><a href="ass5.html">ass5</a></li>
+										<li><a href="ass6.html">ass6</a></li>
+								</nav>
+						
+								
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; GIS Portofolio Briana Castilla. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						
+
+						
+
+							
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
