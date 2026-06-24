@@ -33,34 +33,90 @@
 									</header>
 
 									<!-- Content -->
-                                        <h2>Based on my own experience, I have noticed that</h2>
-                                        <p>Certain adjacent residential neighborhoods in the district Santiago de Surco in Lima, Peru are very dense in nurseries and kindergartens. Therefore, with this assignment I tried to answer: What is approximately the maximum amount of walking time someone living in the following neighborhoods: La Alborada, Tambo de Monterrico, Chacarilla, Las Gardenias, Pancho Fierro, and Santa Teresa, would need to get to a nursery?</p>
-													
-                                       <img src="/images/iso.png" alt="Isochrone Map">
+                                        <h2>Esri course and training</h2>
+												<p>To start this assignment, we had to take an Esri course on supervised image classification. In this course, we learnt about hyperspectral data and ways to clean and interpret hyperspectral histograms. However, this course was only about supervised, while our in-class assignment did both supervised and unsupervised. The difference is that supervised classification uses labeled trainong data to assign classes, while unsupervised classification groups data based only on spectral similarity. Nevertheless, below is the certificate of completion.</p>	
+                                        <h3></h3>
+                                        
+
+                                       <img src="/images/esri.png" alt="Isochrone Map">
                                          <style>
 
                                             img {
                                                 display: block;
                                                 margin-left: auto;
                                                 margin-right: auto;
-                                                width: 60%;
+                                                width: 50%;
+                                            }
+                                       </style><br>
+
+                                       <p>In the course we worked with a small plot of land in the US and used ArcGIS, which was a completely new software for me, so it definetely a slow learning process. Below is a screenshot from the classification exercises from the course.</p>
+                                       <img src="/images/training.png" alt="Isochrone Map">
+                                         <style>
+
+                                            img {
+                                                display: block;
+                                                margin-left: auto;
+                                                margin-right: auto;
+                                                width: 50%;
                                             }
                                        </style>
                                        
-										<h2 id="content">Map aim</h2>
-										<p>Observing and analyzing spatial dynamics in these middle-high class neighborhoods. By simply viewing these patterns, it is also inferrable that it is an attractive space for new families with kids. But from experience living in that area, I can also provide some interesting context. This area used to be grape fields and most of the houses built there are relatively new, around 30 years at most. And it was turned into a fully residential area, attracting many people which are the parents of my generation. Additionally, while growing up in that area, many of the neighbors moved as their children become older. Parks also seem to be inhabited by kids that never grow up, meaning that many starting families choose these neighborhoods for around 10 years before moving somewhere closer to schools, businesses, or other. As this is a recent phenomenon, it is quite an interesting cycle to theorize about.
-                                        </p>
-												<!-- Text stuff
+										<h2 id="content">Machine learning in GIS</h2>
+                                        <p>In remote sensing, ML becomes super important as it normally provides a higher accuracy compared to traditional parameters in data classification, especially with many predictor variables.
+However traditional parametric classifiers are still more common in usage - due to their availability in remote sensing. ML is a field with many uncertainties regarding its use and implementation still, so people seem reluctant. Read more: Maxwell, A. E., Warner, T. A., & Fang, F. (2018). Implementation of machine-learning classification in remote sensing: An applied review. International Journal of Remote Sensing, 39(9), 2784–2817. https://doi.org/10.1080/01431161.2018.1433343 <br><br>
+Types of ML in remote sensing include SVMs, (boosted) DTs, RFs, artificial neural networks (ANNs), and k-nearest neighbour (k-NN).
+These mainly use R to analyze and train for hyperspectral data.</p>
+
+                                                <h2>Land use in Utrecht</h2>
+                                                <p>"Water", "urban", "forest", and "agriculture" were the 4 categories I picked to classify with ML on ArcGIS. A piece of land in Utrecht was allocated (satellite image taken May-June 2026) and we had to do multiple maps. Finally, we also did an NDVI map with ML classification on ArcGIS.</p>
+												
+                                                <img src="/images/suppbclass.png" alt="Isochrone Map">
+                                         <style>
+
+                                            img {
+                                                display: block;
+                                                margin-left: auto;
+                                                margin-right: auto;
+                                                width: 50%;
+                                            }
+                                       </style>
+                                       <img src="/images/unsupobclass.png" alt="Isochrone Map">
+                                         <style>
+
+                                            img {
+                                                display: block;
+                                                margin-left: auto;
+                                                margin-right: auto;
+                                                width: 50%;
+                                            }
+                                       </style>
+                                            <img src="/images/unsuppbclass.png" alt="Isochrone Map">
+                                         <style>
+
+                                            img {
+                                                display: block;
+                                                margin-left: auto;
+                                                margin-right: auto;
+                                                width: 50%;
+                                            }
+                                       </style>    
+                                       <img src="/images/utrndvi.png" alt="Isochrone Map">
+                                         <style>
+
+                                            img {
+                                                display: block;
+                                                margin-left: auto;
+                                                margin-right: auto;
+                                                width: 50%;
+                                            }
+                                       </style>
+                                                
+                                                <!-- Text stuff
 												 	<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
 														This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
 														This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>.
 														Finally, this is a <a href="#">link</a>.</p> -->
-													<h3>Why isochrone?</h3>
-													<p>Using an isochrone map for this assignment was most appropiate as the coverage of the isocrone bands visually demonstrates distance and accessibility to nurseries. With QuickMapServices, I managed to get a map of the district, and with that I identified nurseries and kindergartens in the area to the west of my family home. I took this decision as from my own experience I always identified this area to be packed with these amenities. Then, with ORS I made an isochrone spectrum across every data point, with the ranges 2, 4, and 6 minutes walking distance.</p>
-													<h3>Main patterns</h3>
-                                                    <p>There is only a single spot in the map which is not within a 6-min walking distance range of the nurseries. This space is barely 2 blocks, so it is possible to say that within a couple more minutes, it can be easily reached. The shapes of the isochrones are mostly circular or oval, but along the edges of the selected area some isochrones are slightly more warped. This was expected, as it limits with either main avenues or the highway.</p>
 													
-
 																		
 													
 
